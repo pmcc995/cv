@@ -1,0 +1,159 @@
+{
+  "_chunk-B2tOr_Dq.js": {
+    "file": "assets/chunks/chunk-B2tOr_Dq.js",
+    "name": "Layout",
+    "imports": [
+      "_chunk-CMm_icLQ.js"
+    ]
+  },
+  "_chunk-CMm_icLQ.js": {
+    "file": "assets/chunks/chunk-CMm_icLQ.js",
+    "name": "index"
+  },
+  "_chunk-D1r0_W7f.js": {
+    "file": "assets/chunks/chunk-D1r0_W7f.js",
+    "name": "client",
+    "imports": [
+      "_chunk-CMm_icLQ.js"
+    ]
+  },
+  "_chunk-Dh5Uynsu.js": {
+    "file": "assets/chunks/chunk-Dh5Uynsu.js",
+    "name": "executeOnRenderClientHook"
+  },
+  "_chunk-KJBgnVDy.js": {
+    "file": "assets/chunks/chunk-KJBgnVDy.js",
+    "name": "map-pin",
+    "imports": [
+      "_chunk-B2tOr_Dq.js"
+    ]
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js": {
+    "file": "assets/entries/entry-client-routing.Ct3Qj5uO.js",
+    "name": "entries/entry-client-routing",
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-Dh5Uynsu.js"
+    ],
+    "dynamicImports": [
+      "src/pages/contact.page.tsx",
+      "src/pages/index.page.tsx",
+      "src/pages/portfolio.page.tsx",
+      "src/pages/solutions.page.tsx",
+      "src/pages/contact.page.client.tsx",
+      "src/pages/index.page.client.tsx",
+      "src/pages/portfolio.page.client.tsx",
+      "src/pages/solutions.page.client.tsx"
+    ]
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js": {
+    "file": "assets/entries/entry-server-routing.T-tlR5dD.js",
+    "name": "entries/entry-server-routing",
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-Dh5Uynsu.js"
+    ],
+    "dynamicImports": [
+      "src/pages/contact.page.tsx",
+      "src/pages/index.page.tsx",
+      "src/pages/portfolio.page.tsx",
+      "src/pages/solutions.page.tsx",
+      "src/pages/contact.page.client.tsx",
+      "src/pages/index.page.client.tsx",
+      "src/pages/portfolio.page.client.tsx",
+      "src/pages/solutions.page.client.tsx"
+    ]
+  },
+  "src/pages/contact.page.client.tsx": {
+    "file": "assets/entries/src_pages_contact.page.client.DZOr1u2K.js",
+    "name": "entries/src/pages/contact.page.client",
+    "src": "src/pages/contact.page.client.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CMm_icLQ.js",
+      "_chunk-D1r0_W7f.js"
+    ]
+  },
+  "src/pages/contact.page.tsx": {
+    "file": "assets/entries/src_pages_contact.page.OyTN_k6l.js",
+    "name": "entries/src/pages/contact.page",
+    "src": "src/pages/contact.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-B2tOr_Dq.js",
+      "_chunk-CMm_icLQ.js",
+      "_chunk-KJBgnVDy.js"
+    ]
+  },
+  "src/pages/index.page.client.tsx": {
+    "file": "assets/entries/src_pages_index.page.client.DZOr1u2K.js",
+    "name": "entries/src/pages/index.page.client",
+    "src": "src/pages/index.page.client.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CMm_icLQ.js",
+      "_chunk-D1r0_W7f.js"
+    ]
+  },
+  "src/pages/index.page.tsx": {
+    "file": "assets/entries/src_pages_index.page.cZ56js0Y.js",
+    "name": "entries/src/pages/index.page",
+    "src": "src/pages/index.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-B2tOr_Dq.js",
+      "_chunk-KJBgnVDy.js",
+      "_chunk-CMm_icLQ.js"
+    ]
+  },
+  "src/pages/portfolio.page.client.tsx": {
+    "file": "assets/entries/src_pages_portfolio.page.client.DZOr1u2K.js",
+    "name": "entries/src/pages/portfolio.page.client",
+    "src": "src/pages/portfolio.page.client.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CMm_icLQ.js",
+      "_chunk-D1r0_W7f.js"
+    ]
+  },
+  "src/pages/portfolio.page.tsx": {
+    "file": "assets/entries/src_pages_portfolio.page.fV4_by1Q.js",
+    "name": "entries/src/pages/portfolio.page",
+    "src": "src/pages/portfolio.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-B2tOr_Dq.js",
+      "_chunk-CMm_icLQ.js"
+    ]
+  },
+  "src/pages/solutions.page.client.tsx": {
+    "file": "assets/entries/src_pages_solutions.page.client.DZOr1u2K.js",
+    "name": "entries/src/pages/solutions.page.client",
+    "src": "src/pages/solutions.page.client.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CMm_icLQ.js",
+      "_chunk-D1r0_W7f.js"
+    ]
+  },
+  "src/pages/solutions.page.tsx": {
+    "file": "assets/entries/src_pages_solutions.page.DSmDyxso.js",
+    "name": "entries/src/pages/solutions.page",
+    "src": "src/pages/solutions.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-B2tOr_Dq.js",
+      "_chunk-CMm_icLQ.js"
+    ]
+  }
+}

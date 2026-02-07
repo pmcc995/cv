@@ -1,0 +1,1 @@
+import{R as r}from"../chunks/chunk-CMm_icLQ.js";import{h as a}from"../chunks/chunk-D1r0_W7f.js";function c(e){const{Page:t,pageProps:o}=e;a(document.getElementById("root"),r.createElement(t,o))}export{c as render};

@@ -168,13 +168,7 @@ const translations: Record<string, Translations> = {
             "Delivered Salesforce B2C Commerce Cloud solutions and internal apps using Node.js/React/TypeScript.",
             "Built CI/CD pipelines and automated deployments; implemented GTM and analytics solutions.",
           ],
-        },
-        {
-          company: "Gestamp / West Sea / Various",
-          role: "Earlier roles (Operator / Intern)",
-          period: "2011 - 2019",
-          bullets: ["Various technical and operator roles while studying towards engineering degrees."],
-        },
+        }
       ],
     },
     education: {

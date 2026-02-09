@@ -5,6 +5,8 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Build into docs/ so the repo can publish GitHub Pages from the `docs` folder
+  // Set base to the project site path so static asset URLs include `/cv/`.
+  base: "/cv/",
   build: {
     outDir: "docs",
     emptyOutDir: true,

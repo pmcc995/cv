@@ -42,6 +42,12 @@ const Contact = () => {
       label: t.contact?.info?.location ?? "Location",
       value: t.contact?.info?.location ?? "Viana do Castelo, Portugal",
     },
+    {
+      icon: Linkedin,
+      label: t.contact?.info?.linkedinLabel ?? "LinkedIn",
+      value: t.contact?.info?.linkedin ?? "https://www.linkedin.com/in/pedro-cerqueira-80a296b7/",
+      href: t.contact?.info?.linkedin ?? "https://www.linkedin.com/in/pedro-cerqueira-80a296b7/",
+    },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {

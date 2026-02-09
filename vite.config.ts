@@ -4,6 +4,11 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Build into docs/ so the repo can publish GitHub Pages from the `docs` folder
+  build: {
+    outDir: "docs",
+    emptyOutDir: true,
+  },
   server: {
     host: "::",
     port: 8080,

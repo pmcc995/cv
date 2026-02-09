@@ -67,43 +67,42 @@ const translations: Record<string, Translations> = {
         {
           title: "Store Locator Plugin",
           description: "Development of a Store Locator Plugin for SFCC B2C PWA Kit to enhance in-store discovery and user experience.",
-          image: "/storelocator.png",
+          image: "/cv/storelocator.png",
           tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "API Integrations", "Performance Optimization", "Accessibility"],
         },
         {
           title: "PWA Kit Extensions",
           description: "Extended PWA Kit features for commerce clients including performance optimizations and accessibility improvements.",
           tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "API Integrations", "Performance Optimization", "Accessibility"],
-
         },
         {
           title: "Internal Grocery Solution",
           description: "Full-stack headless grocery solution built on PWA Kit and custom integrations for inventory and ordering.",
-          image: "/grocery.png",
+          image: "/cv/grocery.png",
           tags: ["Salesforce B2C Commerce Cloud", "SFRA", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "API Integrations", "Performance Optimization"],
         },
         {
           title: "Assistant Order Tool",
           description: "Tool that enables sales assistants to place orders on behalf of customers, integrating with Salesforce and commerce APIs.",
-          image: "/infinity.png",
+          image: "/cv/infinity.png",
           tags: ["Salesforce B2C Commerce Cloud", "SFRA", "JavaScript", "API Integrations"],
         },
         {
           title: "E-commerce Replatforming",
           description: "Led replatforming projects migrating legacy systems to modern headless architectures using React and NodeJS.",
-          image: "/sarenza.png",
+          image: "/cv/sarenza.png",
           tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "Python", "API Integrations", "Performance Optimization", "Accessibility", "SEO", "CI/CD", "REST APIs"],
         },
         {
           title: "Multi-brand Retail Platform",
           description: "Architected and led full-stack development for a multi-brand retail platform with complex integrations and CI/CD pipelines.",
-          image: "/continente.png",
+          image: "/cv/continente.png",
           tags: ["Salesforce B2C Commerce Cloud", "SFRA", "JavaScript", "API Integrations"],
         },
         {
           title: "E-commerce Replatforming",
           description: "Led replatforming projects migrating legacy Site-Genesis(Salesforce Commerce Cloud) to modern headless architectures using React and NodeJS(PWA Kit - Salesforce B2C Commerce Cloud).",
-          image: "/vbq.png",
+          image: "/cv/vbq.png",
           tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "Python", "API Integrations", "Performance Optimization", "Accessibility", "SEO", "CI/CD", "REST APIs"],
         },
         {
@@ -127,7 +126,7 @@ const translations: Record<string, Translations> = {
         {
           title: "Promocash B2B",
           description: "B2B eCommerce website architect - Salesforce B2B Commerce Cloud. Maintenance and architecture of evolutions (new functionalities).",
-          image: "",
+          image: "/cv/promocash.png",
           tags: ["Salesforce B2B Commerce Cloud", "Apex", "Salesforce LWC", "CI/CD", "Javascript", "HTML", "CSS", "Flows"],
         },
         {

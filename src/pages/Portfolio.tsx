@@ -3,31 +3,11 @@ import Layout from "@/components/layout/Layout";
 import ProjectCard from "@/components/ProjectCard";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const projectTags = [
-  ["React", "Node.js", "PostgreSQL", "Stripe"],
-  ["TypeScript", "Next.js", "D3.js", "Supabase"],
-  ["React Native", "TypeScript", "AWS"],
-  ["React", "Socket.io", "MongoDB", "Redis"],
-  ["Python", "OpenAI", "FastAPI", "React"],
-  ["Vue.js", "Laravel", "MySQL", "WebSocket"],
-];
-
-const projectUrls = [
-  { liveUrl: "#", githubUrl: "#" },
-  { liveUrl: "#", githubUrl: "#" },
-  { liveUrl: "#" },
-  { githubUrl: "#" },
-  { liveUrl: "#", githubUrl: "#" },
-  { liveUrl: "#" },
-];
-
 const Portfolio = () => {
   const { t } = useLanguage();
 
   const projects = (t.portfolio?.projects ?? []).map((project, index) => ({
     ...project,
-    tags: projectTags[index] ?? [],
-    ...(projectUrls[index] ?? {}),
   }));
 
   return (

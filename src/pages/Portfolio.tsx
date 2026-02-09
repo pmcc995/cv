@@ -3,15 +3,6 @@ import Layout from "@/components/layout/Layout";
 import ProjectCard from "@/components/ProjectCard";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const projectImages = [
-  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
-];
-
 const projectTags = [
   ["React", "Node.js", "PostgreSQL", "Stripe"],
   ["TypeScript", "Next.js", "D3.js", "Supabase"],

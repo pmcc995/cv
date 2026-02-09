@@ -35,10 +35,9 @@ const translations: Record<string, Translations> = {
     contact: {
       title: "Get in touch",
       titleHighlight: "with me",
-      subtitle: "Have a project in mind or want to connect? My inbox is open.",
+      subtitle: "Have a project in mind or want to connect? Contact me via LinkedIn or email.",
       info: {
         email: "pmcc995@gmail.com",
-        phone: "+351 913 364 268",
         location: "Viana do Castelo, Portugal",
         linkedin: "https://www.linkedin.com/in/pedro-cerqueira-80a296b7/",
       },
@@ -278,10 +277,9 @@ const translations: Record<string, Translations> = {
     contact: {
       title: "Fale comigo",
       titleHighlight: "comigo",
-      subtitle: "Tem um projeto em mente ou quer entrar em contacto? A minha caixa está aberta.",
+      subtitle: "Tem um projeto em mente ou quer entrar em contacto? Contacte-me via LinkedIn ou e-mail.",
       info: {
         email: "pmcc995@gmail.com",
-        phone: "+351 913 364 268",
         location: "Viana do Castelo, Portugal",
         linkedin: "https://www.linkedin.com/in/pedro-cerqueira-80a296b7/",
       },

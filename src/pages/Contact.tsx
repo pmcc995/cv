@@ -30,13 +30,13 @@ const Contact = () => {
       label: t.contact?.info?.email ?? "Email",
       value: t.contact?.info?.email ?? "pmcc995@gmail.com",
       href: `mailto:${t.contact?.info?.email ?? "pmcc995@gmail.com"}`,
-    },
+    },/*
     {
       icon: Phone,
       label: t.contact?.info?.phone ?? "Phone",
-      value: t.contact?.info?.phone ?? "+351 913 364 268",
-      href: `tel:${t.contact?.info?.phone ?? "+351913364268"}`,
-    },
+      value: t.contact?.info?.phone ?? "",
+      href: `tel:${t.contact?.info?.phone ?? ""}`,
+    },*/
     {
       icon: MapPin,
       label: t.contact?.info?.location ?? "Location",
@@ -87,14 +87,14 @@ const Contact = () => {
               {t.contact?.subtitle ?? "Have a project in mind or just want to say hi? My inbox is open."}
             </p>
           </motion.div>
-
           <div className="grid lg:grid-cols-2 gap-16">
-            {/* Contact Form */}
+            {/* Contact Form *
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
+             {/*
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>

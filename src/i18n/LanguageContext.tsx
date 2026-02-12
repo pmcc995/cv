@@ -73,6 +73,7 @@ const translations: Record<string, Translations> = {
         {
           title: "PWA Kit Extensions",
           description: "Extended PWA Kit features for commerce clients including performance optimizations and accessibility improvements.",
+          image: "/cv/pwakit.png",
           tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "API Integrations", "Performance Optimization", "Accessibility"],
         },
         {
@@ -120,7 +121,7 @@ const translations: Record<string, Translations> = {
         {
           title: "TheBrandCloset",
           description: "Internal tool for offering special promotions to all company employees (on the company's e-commerce site).",
-          image: "",
+          image: "/cv/coach.png",
           tags: ["PHP", "Jenkins", "CI/CD", "Javascript", "HTML", "CSS"],
         },
         {
@@ -132,7 +133,7 @@ const translations: Record<string, Translations> = {
         {
           title: "Carrefour Service Cloud",
           description: "Maintenance and architecture of enhancements (new features) in Salesforce on the existing platform.",
-          image: "",
+          image: "/cv/carrefour.png",
           tags: ["Salesforce Service Cloud", "Apex", "Salesforce LWC", "CI/CD", "Javascript", "HTML", "CSS", "Flows"],
         },
         {
@@ -352,6 +353,7 @@ const translations: Record<string, Translations> = {
         {
           title: "Extensões PWA Kit",
           description: "Extensões de funcionalidades do PWA Kit para clientes de comércio, incluindo otimizações de performance e acessibilidade.",
+          image: "/cv/pwakit.png",
           tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "API Integrations", "Performance Optimization", "Accessibility"],
         },
         {
@@ -398,19 +400,19 @@ const translations: Record<string, Translations> = {
         {
           title: "TheBrandCloset",
           description: "Ferramenta interna para oferecer promoções especiais a todos os colaboradores da empresa (no site de e-commerce da empresa).",
-          image: "",
+          image: "/cv/coach.png",
           tags: ["PHP", "Jenkins", "CI/CD", "Javascript", "HTML", "CSS"],
         },
         {
           title: "Promocash B2B",
           description: "Arquiteto de e-commerce B2B - Salesforce B2B Commerce Cloud. Manutenção e arquitetura de evoluções (novas funcionalidades).",
-          image: "",
+          image: "/cv/promocash.png",
           tags: ["Salesforce B2B Commerce Cloud", "Apex", "Salesforce LWC", "CI/CD", "Javascript", "HTML", "CSS", "Flows"],
         },
         {
           title: "Carrefour Service Cloud",
           description: "Manutenção e arquitetura de evoluções (novas funcionalidades) em Salesforce na plataforma existente.",
-          image: "",
+          image: "/cv/carrefour.png",
           tags: ["Salesforce Service Cloud", "Apex", "Salesforce LWC", "CI/CD", "Javascript", "HTML", "CSS", "Flows"],
         },
         {

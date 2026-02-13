@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
   "dev": "vite",
-  "build": "vite build",
-  "build:dev": "vite build --mode development",
+  "build": "vite build && node prerender.mjs",
+  "build:dev": "vite build --mode development && node prerender.mjs",
   "lint": "eslint .",
   "preview": "vite preview",
   "test": "vitest run",
@@ -47,6 +47,7 @@
     "cmdk": "^1.1.1",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.6.0",
+    "express": "^4.21.1",
     "framer-motion": "^12.31.0",
     "i18n": "^0.15.3",
     "input-otp": "^1.4.2",

@@ -27,7 +27,7 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      label: t.contact?.info?.email ?? "Email",
+      label: "Email",
       value: t.contact?.info?.email ?? "pmcc995@gmail.com",
       href: `mailto:${t.contact?.info?.email ?? "pmcc995@gmail.com"}`,
     },/*
@@ -39,12 +39,12 @@ const Contact = () => {
     },*/
     {
       icon: MapPin,
-      label: t.contact?.info?.location ?? "Location",
+      label: "Location",
       value: t.contact?.info?.location ?? "Viana do Castelo, Portugal",
     },
     {
       icon: Linkedin,
-      label: t.contact?.info?.linkedinLabel ?? "LinkedIn",
+      label: "LinkedIn",
       value: t.contact?.info?.linkedin ?? "https://www.linkedin.com/in/pedro-cerqueira-80a296b7/",
       href: t.contact?.info?.linkedin ?? "https://www.linkedin.com/in/pedro-cerqueira-80a296b7/",
     },

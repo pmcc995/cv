@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
+import React, { createContext, useCallback, useContext, useEffect, useMemo } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 type Translations = Record<string, any>;
 
@@ -37,7 +38,7 @@ const translations: Record<string, Translations> = {
       titleHighlight: "with me",
       subtitle: "Have a project in mind or want to connect? Contact me via LinkedIn or email.",
       info: {
-        email: "pmcc995@gmail.com",
+        email: "pedro.cerqueira.digital@outlook.com",
         location: "Viana do Castelo, Portugal",
         linkedin: "https://www.linkedin.com/in/pedro-cerqueira-80a296b7/",
       },
@@ -234,7 +235,7 @@ const translations: Record<string, Translations> = {
     },
     footer: {
       rights: "All rights reserved.",
-      contactShort: "pmcc995@gmail.com",
+      contactShort: "pedro.cerqueira.digital@outlook.com",
     },
     // Solutions Page
     solutions: {
@@ -292,134 +293,134 @@ const translations: Record<string, Translations> = {
       about: "Sobre",
     },
     hero: {
-      badge: "Arquiteto Técnico",
-      greeting: "Olá, eu sou",
+      badge: "Arquiteto de soluções digitais",
+      greeting: "Olá, sou",
       name: "Pedro Cerqueira",
-      subtitle: "Software Engineer — Web Apps, Software Interno de Gestão, Salesforce, Headless, Headless Commerce & Multi-cloud Integrations",
+      subtitle: "Desenho e coordeno a criação de lojas online, aplicações e sistemas que ajudam as empresas a trabalhar melhor.",
       viewProjects: "Ver projetos",
-      contactMe: "Contacte-me",
+      contactMe: "Entre em contacto",
     },
     about: {
       title: "Sobre",
       summary:
-        "Possuo Mestrado em Engenharia Informática e mais de 8 anos de experiência em desenvolvimento web. Especializo-me em headless commerce (PWA Kit), Salesforce B2C/B2B Commerce, Service Cloud e integrações multi-cloud. Arquiteturo e lidero equipas multifuncionais para entregar soluções escaláveis e utilizo IA para aumentar a produtividade de desenvolvimento.",
+        "Tenho mestrado em Engenharia Informática e mais de 8 anos de experiência a criar soluções para a web. Trabalho sobretudo em lojas online, sistemas de apoio ao cliente e na ligação entre diferentes plataformas, incluindo Salesforce. Desenho estas soluções, coordeno equipas de diferentes áreas e uso ferramentas de inteligência artificial para tornar o desenvolvimento e a criação de documentação mais eficientes.",
       highlights: [
-        "Headless commerce (PWA Kit, SFRA)",
-        "Salesforce Core: Apex, LWC, Flows",
-        "CI/CD, eCDN, performance e segurança",
-        "Desenvolvimento assistido por IA (GitHub Copilot, prompt engineering)",
+        "Lojas online: PWA Kit e SFRA",
+        "Salesforce: ferramentas para vendas e apoio ao cliente (Apex, LWC, Flows)",
+        "Testes e publicações automáticas; rapidez e segurança (CI/CD, eCDN)",
+        "Ferramentas de IA para apoiar o desenvolvimento e a documentação (GitHub Copilot)",
       ],
       location: "Viana do Castelo, Portugal",
-      education: "Mestre em Engenharia Informática"
+      education: "Mestrado em Engenharia Informática"
     },
     contact: {
-      title: "Fale comigo",
+      title: "Fale",
       titleHighlight: "comigo",
-      subtitle: "Tem um projeto em mente ou quer entrar em contacto? Contacte-me via LinkedIn ou e-mail.",
+      subtitle: "Tem um projeto em mente ou quer conversar? Pode contactar-me por e-mail ou pelo LinkedIn.",
       info: {
-        email: "pmcc995@gmail.com",
+        email: "pedro.cerqueira.digital@outlook.com",
         location: "Viana do Castelo, Portugal",
         linkedin: "https://www.linkedin.com/in/pedro-cerqueira-80a296b7/",
       },
       successTitle: "Mensagem enviada",
-      successDescription: "Obrigado — responderei em breve.",
+      successDescription: "Obrigado. Responderei em breve.",
       form: {
         name: "Nome",
-        email: "Email",
+        email: "E-mail",
         subject: "Assunto",
         message: "Mensagem",
-        namePlaceholder: "Seu nome",
+        namePlaceholder: "O seu nome",
         emailPlaceholder: "voce@exemplo.com",
         subjectPlaceholder: "Assunto",
         messagePlaceholder: "Escreva a sua mensagem...",
-        sending: "Enviando...",
+        sending: "A enviar...",
         send: "Enviar mensagem",
       },
-      social: "Siga-me no LinkedIn",
-      available: "Disponível para trabalho",
+      social: "Encontre-me no LinkedIn",
+      available: "Disponível para novos desafios",
       availableDescription: "Aberto a novas oportunidades e colaborações.",
     },
     portfolio: {
-      title: "Meus",
-      titleHighlight: "Projetos",
-      subtitle: "Uma seleção de projetos e iniciativas em que trabalhei nas áreas de headless commerce, implementações Salesforce e software interno de gestão.",
+      title: "Os meus",
+      titleHighlight: "projetos",
+      subtitle: "Alguns dos projetos em que trabalhei: lojas online, soluções Salesforce e ferramentas para apoiar o trabalho das empresas.",
       projects: [
         {
-          title: "Store Locator Plugin",
-          description: "Desenvolvimento de um plugin Store Locator para SFCC B2C PWA Kit para melhorar a descoberta de lojas e a experiência do utilizador.",
+          title: "Localizador de lojas",
+          description: "Criei uma ferramenta que ajuda os clientes a encontrar lojas e torna mais fácil usar a loja online.",
           image: "/storelocator.png",
-          tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "UX", "HTML", "CSS", "Chackra UI", "Plugin Development", "ReactJS", "NodeJS", "API Integrations", "Performance Optimization", "Accessibility"],
+          tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "Experiência de utilização", "HTML", "CSS", "Chakra UI", "Desenvolvimento de extensões", "ReactJS", "NodeJS", "Integração entre sistemas", "Melhoria da velocidade", "Acessibilidade"],
         },
         {
           title: "Extensões PWA Kit",
-          description: "Extensões de funcionalidades do PWA Kit para clientes de comércio, incluindo otimizações de performance e acessibilidade.",
+          description: "Acrescentei funcionalidades a lojas online, tornando-as mais rápidas e fáceis de usar por pessoas com diferentes necessidades.",
           image: "/cv/pwakit.png",
-          tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "API Integrations", "Performance Optimization", "Accessibility"],
+          tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chakra UI", "Experiência de utilização", "Desenvolvimento de extensões", "ReactJS", "NodeJS", "Integração entre sistemas", "Melhoria da velocidade", "Acessibilidade"],
         },
         {
-          title: "Solução Interna de Retail",
-          description: "Solução headless full-stack para retails construída sobre PWA Kit com integrações personalizadas de inventário e encomenda.",
+          title: "Loja online de supermercado",
+          description: "Criei uma loja online de produtos de supermercado ligada aos sistemas de stock e de encomendas.",
           image: "/grocery.png",
-          tags: ["Salesforce B2C Commerce Cloud", "SFRA", "PWA Kit", "JavaScript", "HTML", "CSS", "API Integrations", "Performance Optimization"],
+          tags: ["Salesforce B2C Commerce Cloud", "SFRA", "PWA Kit", "JavaScript", "HTML", "CSS", "Integração entre sistemas", "Melhoria da velocidade"],
         },
         {
-          title: "Ferramenta de Assistente de Encomendas",
-          description: "Ferramenta que permite a assistentes de vendas colocar encomendas em nome de clientes, integrando com Salesforce e APIs de comércio.",
+          title: "Ferramenta de apoio a encomendas",
+          description: "Permite que os assistentes de vendas façam encomendas em nome dos clientes, através dos sistemas Salesforce e de comércio online.",
           image: "/infinity.png",
-          tags: ["Salesforce B2C Commerce Cloud", "SFRA", "JavaScript", "API Integrations"],
+          tags: ["Salesforce B2C Commerce Cloud", "SFRA", "JavaScript", "Integração entre sistemas"],
         },
         {
-          title: "Replatforming de E-commerce",
-          description: "Liderança em projetos de replatforming migrando sistemas legados para arquiteturas headless modernas com React e NodeJS.",
+          title: "Modernização de lojas online",
+          description: "Coordenei a passagem de lojas online antigas para plataformas mais modernas, usando React e Node.js.",
           image: "/sarenza.png",
-          tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "Python", "API Integrations", "Performance Optimization", "Accessibility", "SEO", "CI/CD", "REST APIs"],
+          tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chakra UI", "Experiência de utilização", "Desenvolvimento de extensões", "ReactJS", "NodeJS", "Python", "Integração entre sistemas", "Melhoria da velocidade", "Acessibilidade", "Visibilidade nos motores de busca", "Automatização de testes e publicações", "APIs REST"],
         },
         {
-          title: "Plataforma Multi-marca de Retail",
-          description: "Arquitetura e liderança no desenvolvimento full-stack de uma plataforma multi-marca com integrações complexas e pipelines de CI/CD.",
+          title: "Plataforma para várias marcas",
+          description: "Desenhei e coordenei o desenvolvimento de uma plataforma para várias marcas, ligada a outros sistemas e preparada para automatizar testes e publicações.",
           image: "/continente.png",
         },
         {
-          title: "E-commerce Replatforming",
-          description: "Liderança em projetos de replatforming migrando legacy Site-Genesis(Salesforce Commerce Cloud) para arquiteturas headless modernas usando React e NodeJS(PWA Kit - Salesforce B2C Commerce Cloud).",
+          title: "Modernização de uma plataforma de comércio online",
+          description: "Coordenei a passagem da antiga plataforma SiteGenesis para uma loja online mais moderna, usando React e Node.js com o PWA Kit da Salesforce.",
           image: "/vbq.png",
-          tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chackra UI", "UX", "Plugin Development", "ReactJS", "NodeJS", "Python", "API Integrations", "Performance Optimization", "Accessibility", "SEO", "CI/CD", "REST APIs"],
+          tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chakra UI", "Experiência de utilização", "Desenvolvimento de extensões", "ReactJS", "NodeJS", "Python", "Integração entre sistemas", "Melhoria da velocidade", "Acessibilidade", "Visibilidade nos motores de busca", "Automatização de testes e publicações", "APIs REST"],
         },
         {
           title: "Cache Flush",
-          description: "Ferramenta interna para limpar o cache das páginas do site de e-commerce da empresa.",
+          description: "Ferramenta interna para atualizar as páginas da loja online quando o conteúdo guardado precisava de ser renovado.",
           image: "",
-          tags: ["PHP", "Jenkins", "CI/CD", "Javascript", "HTML", "CSS"],
+          tags: ["PHP", "Jenkins", "CI/CD", "JavaScript", "HTML", "CSS"],
         },
         {
-          title: "Lighthouse",
-          description: "Ferramenta interna para monitorar o desempenho de páginas específicas no site de e-commerce da empresa.",
+          title: "Monitorização da loja online",
+          description: "Ferramenta interna para acompanhar a velocidade de páginas específicas da loja online.",
           image: "",
-          tags: ["Handlebars", "NodeTS", "Jenkins", "CI/CD", "Javascript", "HTML", "CSS"],
+          tags: ["Handlebars", "NodeTS", "Jenkins", "CI/CD", "JavaScript", "HTML", "CSS"],
         },
         {
           title: "TheBrandCloset",
-          description: "Ferramenta interna para oferecer promoções especiais a todos os colaboradores da empresa (no site de e-commerce da empresa).",
+          description: "Ferramenta interna que dava aos colaboradores acesso a promoções especiais na loja online da empresa.",
           image: "/cv/coach.png",
-          tags: ["PHP", "Jenkins", "CI/CD", "Javascript", "HTML", "CSS"],
+          tags: ["PHP", "Jenkins", "CI/CD", "JavaScript", "HTML", "CSS"],
         },
         {
           title: "Promocash B2B",
-          description: "Arquiteto de e-commerce B2B - Salesforce B2B Commerce Cloud. Manutenção e arquitetura de evoluções (novas funcionalidades).",
+          description: "Desenhei a plataforma de vendas online da Promocash para empresas e trabalhei na manutenção e criação de novas funcionalidades.",
           image: "/cv/promocash.png",
-          tags: ["Salesforce B2B Commerce Cloud", "Apex", "Salesforce LWC", "CI/CD", "Javascript", "HTML", "CSS", "Flows"],
+          tags: ["Salesforce B2B Commerce Cloud", "Apex", "Salesforce LWC", "CI/CD", "JavaScript", "HTML", "CSS", "Flows"],
         },
         {
           title: "Carrefour Service Cloud",
-          description: "Manutenção e arquitetura de evoluções (novas funcionalidades) em Salesforce na plataforma existente.",
+          description: "Trabalhei na manutenção e melhoria da plataforma Salesforce usada pelo Carrefour para apoiar o serviço ao cliente.",
           image: "/cv/carrefour.png",
-          tags: ["Salesforce Service Cloud", "Apex", "Salesforce LWC", "CI/CD", "Javascript", "HTML", "CSS", "Flows"],
+          tags: ["Salesforce Service Cloud", "Apex", "Salesforce LWC", "CI/CD", "JavaScript", "HTML", "CSS", "Flows"],
         },
         {
-          title: "Tapestry Site Corporativo",
-          description: "Desenvolvedor durante a migração do site corporativo de WordPress para tecnologia CI4",
+          title: "Site corporativo da Tapestry",
+          description: "Participei na mudança do site corporativo da Tapestry, de WordPress para a tecnologia CI4.",
           image: "/cv/tapestry.png",
-          tags: ["PHP", "CI4", "HTML", "Javascript", "CSS", "Jenkins"],
+          tags: ["PHP", "CI4", "HTML", "JavaScript", "CSS", "Jenkins"],
         },
       ],
       viewProject: "Ver",
@@ -428,30 +429,30 @@ const translations: Record<string, Translations> = {
     profile: {
       title: "Perfil",
       text:
-        "Arquiteto Técnico Salesforce com mais de 8 anos de experiência, especializado em headless commerce, B2C/B2B Commerce e Service Cloud. Experiência em arquitetar soluções multi-cloud, liderar equipas e implementar fluxos de trabalho impulsionados por IA.",
+        "Arquiteto técnico Salesforce com mais de 8 anos de experiência em lojas online para consumidores e empresas e em sistemas de apoio ao cliente. Desenho soluções que ligam diferentes plataformas, coordeno equipas e uso ferramentas de inteligência artificial para melhorar o trabalho de desenvolvimento.",
     },
     experience: {
       title: "Experiência",
       items: [
         {
           company: "OSF Digital",
-          role: "Technical Architect | Tech Lead | Full-Stack Developer",
-          period: "Nov 2021 - Presente",
+          role: "Arquiteto técnico | Responsável técnico de equipa | Programador",
+          period: "nov. 2021 – presente",
           location: "Viana do Castelo, Portugal",
           bullets: [
-            "Liderança técnica e desenvolvimento full-stack para soluções Salesforce multi-cloud (B2C/B2B Commerce & Service Cloud).",
-            "Arquitetura de plataformas headless (PWA Kit) e SFRA e respetivas integrações.",
-            "Desenvolvimento em Apex, LWC e Flows; implementação de CI/CD, eCDN e deploys de produção.",
-            "Implementação de workflows assistidos por IA com Copilot e prompt engineering (redução de 60% no tempo de geração de documentação).",
+            "Coordeno o trabalho técnico e também desenvolvo soluções Salesforce para lojas online de consumidores e empresas e para apoio ao cliente.",
+            "Desenho plataformas de comércio online com PWA Kit e SFRA e ligo-as a outros sistemas.",
+            "Crio funcionalidades Salesforce e ajudo a automatizar testes e publicações, incluindo lançamentos para os utilizadores.",
+            "Implementei formas de usar o GitHub Copilot e instruções para ferramentas de IA no trabalho da equipa; o tempo necessário para criar documentação diminuiu 60%.",
           ],
         },
         {
           company: "Wipro",
-          role: "Salesforce Technical Consultant | Developer",
-          period: "Out 2019 - Nov 2021",
+          role: "Consultor técnico Salesforce | Programador",
+          period: "out. 2019 – nov. 2021",
           bullets: [
-            "Entrega de soluções Salesforce B2C Commerce Cloud e aplicações internas com Node.js/React/TypeScript.",
-            "Construção de pipelines CI/CD e automação de deploys; implementação de GTM e soluções analíticas.",
+            "Desenvolvi lojas online Salesforce para consumidores e aplicações internas com Node.js, React e TypeScript.",
+            "Automatizei testes e publicações de aplicações e trabalhei na implementação do Google Tag Manager e de ferramentas de análise.",
           ],
         },
       ],
@@ -482,13 +483,13 @@ const translations: Record<string, Translations> = {
       ],
     },
     technicalSnapshot: {
-      title: "Resumo Técnico",
+      title: "Ferramentas e tecnologias",
       bullets: [
-        "Commerce & Salesforce: SFCC (SFRA, PWA Kit), SCAPI, Managed Runtime, Apex, LWC, Flows",
-        "DevOps: CI/CD, Jenkins, Docker, Git, Gitlab/GitHub Pipelines",
-        "Arquitetura: Microservices, REST APIs, Headless Commerce",
-        "IA & Automação: GitHub Copilot, Prompt Engineering, Integração de APIs de IA",
-        "Linguagens/Ferramentas: React, NodeJS, TypeScript, JavaScript, Python, MySQL, PHP, GTM, eCDN",
+        "Lojas online e Salesforce: Salesforce Commerce Cloud, PWA Kit, SFRA e ferramentas para vendas e apoio ao cliente",
+        "Testes e publicações automáticas: Jenkins, Docker, Git, GitLab e GitHub",
+        "Ligação entre sistemas: microsserviços, APIs REST e comércio online",
+        "Inteligência artificial: GitHub Copilot, instruções para ferramentas de IA e ligação a serviços de IA",
+        "Programação e ferramentas: React, Node.js, TypeScript, JavaScript, Python, MySQL, PHP, Google Tag Manager e redes de distribuição de conteúdos (eCDN)",
       ],
     },
     languages: {
@@ -500,64 +501,84 @@ const translations: Record<string, Translations> = {
       ],
     },
     skills: {
-      title: "Competências",
-      titleHighlight: "Visão geral",
-      subtitle: "Tecnologias e ferramentas com que trabalho.",
+      title: "Áreas em que",
+      titleHighlight: "posso ajudar",
+      subtitle: "O que faço e algumas das ferramentas que utilizo.",
+      frontend: {
+        title: "Sites e aplicações",
+        description: "Crio as partes com que as pessoas interagem (HTML, React, TypeScript, CSS, Tailwind, Salesforce LWC e Chakra UI).",
+      },
+      backend: {
+        title: "Funcionalidades e ligações entre sistemas",
+        description: "Desenvolvo o que acontece por trás dos sites e aplicações (Node.js, Express, Nest, Python, Apex, APIs REST e GraphQL).",
+      },
+      database: {
+        title: "Bases de dados",
+        description: "Organizo e consulto informação em MySQL, PostgreSQL, MongoDB e Salesforce SOQL.",
+      },
+      design: {
+        title: "Design e experiência de utilização",
+        description: "Trabalho com Figma e experiência de utilização (UX) para tornar as aplicações mais fáceis de usar.",
+      },
+      devops: {
+        title: "Testes e publicação de aplicações",
+        description: "Automatizo testes e publicações com Docker, Jenkins, GitLab e GitHub Actions.",
+      },
       list: [
-        "Apex & LWC",
-        "PWA Kit, SFRA, React, NodeJS",
-        "CI/CD, Docker, Jenkins, GitHub Actions",
-        "Microservices, REST APIs, Integrações",
-        "Desenvolvimento assistido por IA",
+        "Desenvolvimento de soluções Salesforce",
+        "Criação e melhoria de lojas online",
+        "Automatização de testes e publicações",
+        "Ligação entre plataformas e sistemas",
+        "Uso de inteligência artificial no desenvolvimento",
       ],
     },
     footer: {
       rights: "Todos os direitos reservados.",
-      contactShort: "pmcc995@gmail.com",
+      contactShort: "pedro.cerqueira.digital@outlook.com",
     },
     // Solutions Page
     solutions: {
-      title: "Problemas &",
+      title: "Desafios e",
       titleHighlight: "Soluções",
-      subtitle: "A minha abordagem a desafios técnicos reais.",
-      problemLabel: "O Desafio",
-      approachLabel: "A Minha Abordagem",
+      subtitle: "Exemplos de problemas que ajudei a resolver e dos resultados alcançados.",
+      problemLabel: "O problema",
+      approachLabel: "O que fiz",
       impactLabel: "Impacto",
       items: [
         {
-          category: "Performance",
-          title: "Aplicação Web com Tempos de Carregamento Críticos",
-          problem: "Uma aplicação web corporativa apresentava tempos de carregamento superiores a 8 segundos, com utilizadores a abandonar a plataforma antes de completar tarefas essenciais. O bounce rate ultrapassava os 60%.",
-          approach: "Implementei uma estratégia de otimização em camadas: análise de bundle para eliminar dependências desnecessárias, lazy loading de componentes por rota, otimização de imagens com formatos modernos (WebP/AVIF), e implementação de um sistema de cache inteligente com invalidação seletiva. Reestruturei as queries ao backend para reduzir o payload e introduzi paginação virtual para listas extensas.",
-          impact: "Tempo de carregamento reduzido para 1.5s • Bounce rate diminuiu para 22% • Score Lighthouse de 94/100",
+          category: "Velocidade",
+          title: "Uma aplicação web demasiado lenta",
+          problem: "Uma aplicação de uma empresa demorava mais de 8 segundos a abrir. Muitos utilizadores saíam antes de concluir as tarefas, e mais de 60% abandonavam a página sem interagir.",
+          approach: "Analisei o que a aplicação carregava e retirei o que não era necessário. Fiz com que cada página carregasse apenas os elementos de que precisava, melhorei a forma como as imagens eram apresentadas e criei um sistema para guardar e reutilizar informação. Também reduzi a quantidade de dados trocados com o sistema e melhorei a apresentação de listas longas.",
+          impact: "Abertura em 1,5 segundos • Pessoas que saíam sem interagir: de mais de 60% para 22% • Avaliação Lighthouse de 94/100",
         },
         {
-          category: "SEO",
-          title: "Plataforma SPA Invisível para Motores de Busca",
-          problem: "Uma plataforma de conteúdo construída como SPA (Single Page Application) era praticamente invisível para motores de busca. O tráfego orgânico representava menos de 5% do total, e páginas de produto não eram indexadas.",
-          approach: "Desenhei uma estratégia de SEO técnico abrangente: implementação de Server-Side Rendering (SSR) para páginas críticas, geração de meta tags dinâmicas por página, criação de sitemaps automáticos, implementação de dados estruturados (JSON-LD) para produtos e artigos, e otimização de Core Web Vitals. Estabeleci um sistema de pré-renderização para conteúdo estático.",
-          impact: "Tráfego orgânico cresceu 340% em 6 meses • 95% das páginas indexadas • Posição média subiu de 47ª para 8ª",
+          category: "Visibilidade nas pesquisas",
+          title: "Conteúdo difícil de encontrar nos motores de busca",
+          problem: "Uma plataforma de conteúdos foi construída de uma forma que dificultava a sua leitura pelos motores de busca. As visitas vindas de pesquisas representavam menos de 5% do total e as páginas de produtos não apareciam nos resultados.",
+          approach: "Preparei as páginas para que os motores de busca conseguissem ler o seu conteúdo. Acrescentei títulos e descrições adequados, listas automáticas das páginas e informação organizada sobre produtos e artigos. Também melhorei a velocidade e a experiência de utilização.",
+          impact: "Visitas vindas de pesquisas aumentaram 340% em 6 meses • 95% das páginas passaram a ser reconhecidas pelos motores de busca • Posição média melhorou do 47.º para o 8.º lugar",
         },
         {
-          category: "Integrações de Dados",
-          title: "Ecossistema Fragmentado de Dados Empresariais",
-          problem: "Uma empresa utilizava mais de 12 sistemas distintos (ERP, CRM, e-commerce, logística) sem integração, resultando em dados duplicados, inconsistências e processos manuais de reconciliação que consumiam 30+ horas semanais.",
-          approach: "Arquitetei uma plataforma de integração centralizada usando um padrão Event-Driven Architecture. Desenhei conectores modulares para cada sistema, implementei um barramento de eventos para sincronização em tempo real e criei um data lake unificado com regras de transformação e validação. Incluí dashboards de monitorização para visibilidade total do fluxo de dados.",
-          impact: "Eliminação de 95% dos processos manuais • Consistência de dados de 99.7%",
+          category: "Ligação entre sistemas",
+          title: "Sistemas da empresa que não comunicavam entre si",
+          problem: "Uma empresa usava mais de 12 sistemas diferentes — para gestão, clientes, vendas online e logística — que não partilhavam informação. Isso criava dados repetidos e contraditórios e obrigava a equipa a passar mais de 30 horas por semana a reconciliá-los manualmente.",
+          approach: "Desenhei uma plataforma para ligar os diferentes sistemas. Criei ligações próprias para cada um, para que as alterações fossem partilhadas automaticamente, e reuni os dados num único local, com regras para os organizar e validar. Também criei painéis para acompanhar a informação.",
+          impact: "95% menos tarefas manuais • Dados coerentes em 99,7% dos casos",
         },
         {
           category: "Escalabilidade",
-          title: "API Monolítica sob Pressão de Crescimento",
-          problem: "Uma API monolítica que servia uma aplicação em rápido crescimento começou a apresentar timeouts frequentes durante picos de tráfego. Com 10x mais utilizadores em 6 meses, o sistema não escalava e a equipa tinha dificuldade em fazer deploy sem downtime.",
-          approach: "Conduzi uma decomposição estratégica do monolito em microserviços, identificando bounded contexts e definindo contratos claros entre serviços. Implementei circuit breakers para resiliência, API gateway para routing inteligente, e uma estratégia de deployment blue-green para zero-downtime. Introduzi auto-scaling baseado em métricas de negócio, não apenas CPU.",
-          impact: "Zero downtime em deployments • Suporte a 50x mais tráfego • Tempo de deploy de 45min para 3min",
+          title: "Uma aplicação que não acompanhava o aumento de utilizadores",
+          problem: "Uma aplicação em crescimento começou a falhar quando muitas pessoas a usavam ao mesmo tempo. O número de utilizadores aumentou 10 vezes em 6 meses, e a equipa tinha dificuldade em atualizar a aplicação sem a interromper.",
+          approach: "Dividi o sistema em partes mais pequenas, com funções e regras de comunicação claras. Preparei-o para lidar melhor com falhas, organizei a publicação de atualizações sem interromper o serviço e ajustei os recursos disponíveis à procura.",
+          impact: "Atualizações sem interrupções • Suporte a 50 vezes mais tráfego • Publicações reduzidas de 45 para 3 minutos",
         },
         {
           category: "Segurança",
-          title: "Vulnerabilidades Críticas em Plataforma Financeira",
-          problem: "Uma auditoria de segurança a uma plataforma financeira revelou vulnerabilidades críticas: injeção SQL, tokens de sessão previsíveis, ausência de rate limiting e dados sensíveis expostos em logs. A plataforma processava transações de milhares de utilizadores.",
-          approach: "Implementei uma abordagem de segurança em profundidade: parameterização completa de queries, rotação de tokens com JWT de curta duração e refresh tokens seguros, rate limiting adaptativo por endpoint e utilizador, encriptação de dados em repouso e em trânsito, e sanitização de logs. Estabeleci um pipeline de CI/CD com análise estática de segurança (SAST) e testes de penetração automatizados.",
-          impact: "Zero vulnerabilidades críticas na re-auditoria • Conformidade PCI-DSS alcançada • Zero incidentes de segurança",
+          title: "Falhas de segurança numa plataforma financeira",
+          problem: "Uma análise de segurança encontrou falhas graves numa plataforma financeira: dados podiam ser acedidos através de pesquisas mal protegidas, as chaves de sessão eram previsíveis, não havia limites para pedidos repetidos e informação sensível aparecia nos registos do sistema. A plataforma processava transações de milhares de utilizadores.",
+          approach: "Protegi as pesquisas e as chaves de acesso, limitei pedidos repetidos, protegi os dados guardados e enviados e removi informação sensível dos registos. Também acrescentei verificações automáticas de segurança e testes para procurar falhas.",
+          impact: "Nenhuma falha crítica na nova análise • Conformidade com PCI-DSS alcançada • Nenhum incidente de segurança",
         },
       ],
     }
@@ -566,11 +587,18 @@ const translations: Record<string, Translations> = {
 
 type LanguageContextValue = {
   t: Translations;
-  locale: string;
-  setLocale: (locale: string) => void;
+  locale: Language;
+  setLocale: (locale: Language) => void;
 };
 
-const defaultLocale = "en";
+export type Language = "en" | "pt";
+
+const defaultLocale: Language = "en";
+
+export const getLocalizedPath = (pathname: string, locale: Language) => {
+  const pathWithoutLocale = pathname.replace(/^\/(en|pt)(?=\/|$)/, "") || "/";
+  return `/${locale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
+};
 
 const LanguageContext = createContext<LanguageContextValue>({
   t: translations[defaultLocale],
@@ -579,24 +607,20 @@ const LanguageContext = createContext<LanguageContextValue>({
 });
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [locale, setLocale] = useState<string>(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("locale") || defaultLocale;
-    }
-    return defaultLocale;
-  });
+  const location = useLocation();
+  const navigate = useNavigate();
+  const locale: Language = location.pathname.split("/")[1] === "pt" ? "pt" : defaultLocale;
+  const setLocale = useCallback((nextLocale: Language) => {
+    navigate(getLocalizedPath(location.pathname, nextLocale));
+  }, [location.pathname, navigate]);
 
   useEffect(() => {
-    try {
-      localStorage.setItem("locale", locale);
-    } catch (e) {
-      // ignore
-    }
+    document.documentElement.lang = locale;
   }, [locale]);
 
   const value = useMemo(
     () => ({ t: translations[locale] || translations[defaultLocale], locale, setLocale }),
-    [locale]
+    [locale, setLocale]
   );
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;

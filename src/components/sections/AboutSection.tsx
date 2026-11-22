@@ -64,9 +64,13 @@ const AboutSection = () => {
                     <Calendar size={14} />
                     {exp.period}
                   </div>
-                  <h4 className="font-semibold">{exp.title}</h4>
+                  <h4 className="font-semibold">{exp.role}</h4>
                   <p className="text-sm text-primary mb-1">{exp.company}</p>
-                  <p className="text-sm text-muted-foreground">{exp.description}</p>
+                  <ul className="list-disc space-y-1 pl-4 text-sm text-muted-foreground">
+                    {exp.bullets.map((bullet: string, bulletIndex: number) => (
+                      <li key={bulletIndex}>{bullet}</li>
+                    ))}
+                  </ul>
                 </motion.div>
               ))}
             </div>

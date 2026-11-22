@@ -1,9 +1,9 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { getLocalizedPath, useLanguage } from "@/i18n/LanguageContext";
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -17,8 +17,8 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <Link to="/" className="text-xl font-bold gradient-text">
-            Home
+          <Link to={getLocalizedPath("/", locale)} className="text-xl font-bold gradient-text">
+            {t.nav?.home ?? "Home"}
           </Link>
 
           {/* Social Links */}
@@ -27,7 +27,7 @@ const Footer = () => {
               social.spa ? (
                 <Link
                   key={index}
-                  to={social.href}
+                  to={getLocalizedPath(social.href, locale)}
                   className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-200"
                   aria-label={social.label}
                 >

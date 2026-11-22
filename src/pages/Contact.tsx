@@ -28,8 +28,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: t.contact?.info?.email ?? "pmcc995@gmail.com",
-      href: `mailto:${t.contact?.info?.email ?? "pmcc995@gmail.com"}`,
+      value: t.contact?.info?.email ?? "pedro.cerqueira.digital@outlook.com",
+      href: `mailto:${t.contact?.info?.email ?? "pedro.cerqueira.digital@outlook.com"}`,
     },/*
     {
       icon: Phone,

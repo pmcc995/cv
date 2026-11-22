@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { getLocalizedPath, useLanguage } from "@/i18n/LanguageContext";
 
 const HeroSection = () => {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -56,10 +56,10 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button variant="hero" size="xl" asChild>
-              <Link to="/portfolio">{t.hero?.viewProjects ?? "View projects"}</Link>
+              <Link to={getLocalizedPath("/portfolio", locale)}>{t.hero?.viewProjects ?? "View projects"}</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <Link to="/contact">{t.hero?.contactMe ?? "Contact me"}</Link>
+              <Link to={getLocalizedPath("/contact", locale)}>{t.hero?.contactMe ?? "Contact me"}</Link>
             </Button>
           </motion.div>
         </div>

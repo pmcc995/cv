@@ -4,12 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { getLocalizedPath, useLanguage } from "@/i18n/LanguageContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const currentPath = location.pathname.replace(/^\/(en|pt)(?=\/|$)/, "") || "/";
 
   const navLinks = [
     { href: "/", label: t.nav?.home ?? "Home" },
@@ -28,8 +29,8 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="text-xl font-bold gradient-text">
-            Home
+          <Link to={getLocalizedPath("/", locale)} className="text-xl font-bold gradient-text">
+            {t.nav?.home ?? "Home"}
           </Link>
 
           {/* Desktop Navigation */}
@@ -37,15 +38,15 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <Link
                 key={link.href}
-                to={link.href}
+                to={getLocalizedPath(link.href, locale)}
                 className={`relative text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === link.href
+                  currentPath === link.href
                     ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {link.label}
-                {location.pathname === link.href && (
+                {currentPath === link.href && (
                   <motion.div
                     layoutId="navbar-indicator"
                     className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full"
@@ -60,7 +61,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-3">
             <LanguageSwitcher />
             <Button variant="hero" size="sm" asChild>
-              <Link to="/contact">{t.nav?.contactMe ?? "Contact me"}</Link>
+              <Link to={getLocalizedPath("/contact", locale)}>{t.nav?.contactMe ?? "Contact me"}</Link>
             </Button>
           </div>
 
@@ -92,10 +93,10 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
-                  to={link.href}
+                  to={getLocalizedPath(link.href, locale)}
                   onClick={() => setIsOpen(false)}
                   className={`block py-2 text-lg font-medium ${
-                    location.pathname === link.href
+                    currentPath === link.href
                       ? "text-primary"
                       : "text-muted-foreground"
                   }`}
@@ -104,7 +105,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Button variant="hero" className="w-full" asChild>
-                <Link to="/contact" onClick={() => setIsOpen(false)}>
+                <Link to={getLocalizedPath("/contact", locale)} onClick={() => setIsOpen(false)}>
                   {t.nav.contactMe}
                 </Link>
               </Button>

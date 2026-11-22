@@ -294,7 +294,7 @@ const translations: Record<string, Translations> = {
     },
     hero: {
       badge: "Arquiteto de soluções digitais",
-      greeting: "Olá, sou",
+      greeting: "Olá, sou o",
       name: "Pedro Cerqueira",
       subtitle: "Desenho e coordeno a criação de lojas online, aplicações e sistemas que ajudam as empresas a trabalhar melhor.",
       viewProjects: "Ver projetos",
@@ -307,7 +307,7 @@ const translations: Record<string, Translations> = {
       highlights: [
         "Lojas online: PWA Kit e SFRA",
         "Salesforce: ferramentas para vendas e apoio ao cliente (Apex, LWC, Flows)",
-        "Testes e publicações automáticas; rapidez e segurança (CI/CD, eCDN)",
+        "Automatização de testes e lançamentos de novas versões; rapidez e segurança (CI/CD, eCDN)",
         "Ferramentas de IA para apoiar o desenvolvimento e a documentação (GitHub Copilot)",
       ],
       location: "Viana do Castelo, Portugal",
@@ -387,7 +387,7 @@ const translations: Record<string, Translations> = {
           tags: ["Salesforce B2C Commerce Cloud", "PWA Kit", "JavaScript", "HTML", "CSS", "Chakra UI", "Experiência de utilização", "Desenvolvimento de extensões", "ReactJS", "NodeJS", "Python", "Integração entre sistemas", "Melhoria da velocidade", "Acessibilidade", "Visibilidade nos motores de busca", "Automatização de testes e publicações", "APIs REST"],
         },
         {
-          title: "Cache Flush",
+          title: "Atualização do cache",
           description: "Ferramenta interna para atualizar as páginas da loja online quando o conteúdo guardado precisava de ser renovado.",
           image: "",
           tags: ["PHP", "Jenkins", "CI/CD", "JavaScript", "HTML", "CSS"],
@@ -442,7 +442,7 @@ const translations: Record<string, Translations> = {
           bullets: [
             "Coordeno o trabalho técnico e também desenvolvo soluções Salesforce para lojas online de consumidores e empresas e para apoio ao cliente.",
             "Desenho plataformas de comércio online com PWA Kit e SFRA e ligo-as a outros sistemas.",
-            "Crio funcionalidades Salesforce e ajudo a automatizar testes e publicações, incluindo lançamentos para os utilizadores.",
+            "Crio funcionalidades Salesforce e ajudo a automatizar testes e o lançamento de novas versões para os utilizadores.",
             "Implementei formas de usar o GitHub Copilot e instruções para ferramentas de IA no trabalho da equipa; o tempo necessário para criar documentação diminuiu 60%.",
           ],
         },
@@ -550,14 +550,14 @@ const translations: Record<string, Translations> = {
           title: "Uma aplicação web demasiado lenta",
           problem: "Uma aplicação de uma empresa demorava mais de 8 segundos a abrir. Muitos utilizadores saíam antes de concluir as tarefas, e mais de 60% abandonavam a página sem interagir.",
           approach: "Analisei o que a aplicação carregava e retirei o que não era necessário. Fiz com que cada página carregasse apenas os elementos de que precisava, melhorei a forma como as imagens eram apresentadas e criei um sistema para guardar e reutilizar informação. Também reduzi a quantidade de dados trocados com o sistema e melhorei a apresentação de listas longas.",
-          impact: "Abertura em 1,5 segundos • Pessoas que saíam sem interagir: de mais de 60% para 22% • Avaliação Lighthouse de 94/100",
+          impact: "Abertura em 1,5 segundos • Utilizadores que saíam sem interagir: de mais de 60% para 22% • Avaliação Lighthouse de 94/100",
         },
         {
           category: "Visibilidade nas pesquisas",
           title: "Conteúdo difícil de encontrar nos motores de busca",
           problem: "Uma plataforma de conteúdos foi construída de uma forma que dificultava a sua leitura pelos motores de busca. As visitas vindas de pesquisas representavam menos de 5% do total e as páginas de produtos não apareciam nos resultados.",
           approach: "Preparei as páginas para que os motores de busca conseguissem ler o seu conteúdo. Acrescentei títulos e descrições adequados, listas automáticas das páginas e informação organizada sobre produtos e artigos. Também melhorei a velocidade e a experiência de utilização.",
-          impact: "Visitas vindas de pesquisas aumentaram 340% em 6 meses • 95% das páginas passaram a ser reconhecidas pelos motores de busca • Posição média melhorou do 47.º para o 8.º lugar",
+          impact: "Visitas vindas de pesquisas aumentaram 340% em 6 meses • 95% das páginas passaram a poder ser encontradas nos motores de busca • Posição média melhorou do 47.º para o 8.º lugar",
         },
         {
           category: "Ligação entre sistemas",
@@ -571,7 +571,7 @@ const translations: Record<string, Translations> = {
           title: "Uma aplicação que não acompanhava o aumento de utilizadores",
           problem: "Uma aplicação em crescimento começou a falhar quando muitas pessoas a usavam ao mesmo tempo. O número de utilizadores aumentou 10 vezes em 6 meses, e a equipa tinha dificuldade em atualizar a aplicação sem a interromper.",
           approach: "Dividi o sistema em partes mais pequenas, com funções e regras de comunicação claras. Preparei-o para lidar melhor com falhas, organizei a publicação de atualizações sem interromper o serviço e ajustei os recursos disponíveis à procura.",
-          impact: "Atualizações sem interrupções • Suporte a 50 vezes mais tráfego • Publicações reduzidas de 45 para 3 minutos",
+          impact: "Atualizações sem interrupções • Suporte a 50 vezes mais tráfego • Tempo para lançar uma nova versão reduzido de 45 para 3 minutos",
         },
         {
           category: "Segurança",
